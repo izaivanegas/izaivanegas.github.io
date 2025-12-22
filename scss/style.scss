@@ -1,0 +1,33 @@
+@use './variables' as *;
+body {
+    background-color: $colorPrincipal;
+}
+
+header {
+    nav {
+        padding: 20px;
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0.6rem 0.8rem;
+            align-content: center;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: nowrap; /*Siempre va a estar en la misma linea*/
+            li {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.index {
+    background-image: url('../img/hotel1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* hace que la imagen quede fija en la ventana */
+    background-color: $colorPrincipal; /* usa la variable de _variables.scss */
+    min-height: 100vh; /* asegura que cubra la pantalla */
+}
